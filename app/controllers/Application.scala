@@ -26,7 +26,7 @@ var hitCount = 0 ;
     { println("now changed") ;
       cart = "mango"::cart
     };
-    Ok(views.html.basket(cart))
+    Ok(views.html.basket(cart, new java.util.Date()));
   }
 
   def products(id: Long) = Action {

@@ -1,10 +1,11 @@
-@(items: List[String])
+@(items: List[String],time: java.util.Date))
 
 @title = @{"Your Shopping Cart"} 
 
 @cart(title) {
     
 	<h1>@title</h1>
+	<h1>@time</h1>
 	
 	<ul>
 		@items.map { item =>
